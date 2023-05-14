@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import { useState } from "react";
-import Cookies from "js-cookie";
 
 import Personage from "./pages/Personage";
 import Comics from "./pages/Comics";
