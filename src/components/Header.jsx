@@ -13,8 +13,6 @@ const Header = ({ search, setSearch }) => {
         value={search}
         onChange={(event) => {
           setSearch(event.target.value);
-
-          // Voir useDebounce pour ne pas faire une requête à chaque caractère écrit
         }}
       />
       <div className="menu">

@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Cookies from "js-cookie";
-import axios from "axios";
 
 const Perso = ({ elem }) => {
   const [fav, setFav] = useState(false);
@@ -22,7 +21,8 @@ const Perso = ({ elem }) => {
             onClick={() => {
               if (fav === false) {
                 setFav(true);
-                console.log(fav);
+                Cookies.set("marvel", fav);
+
                 alert("ajouter");
                 Cookies.set("marvel", fav, { expires: 14 });
               } else {
